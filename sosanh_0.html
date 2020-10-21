@@ -10,12 +10,15 @@
 <body>
     <script>
         let InputNo = Number(prompt("Nhập số nguyên bất kỳ", ""))
-        if (InputNo > 0) {
-            alert(1)
-        } else if (InputNo < 0) {
-            alert(-1)
-        } else {
-            alert(0)
+        switch (InputNo) {
+            case (InputNo > 0):
+            alert (1);
+            break;
+            case (InputNo < 0):
+            alert (-1);
+            break;
+            default:
+                alert (0)
         }
     </script>
 </body>
